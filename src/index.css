@@ -91,6 +91,9 @@ img.medium{
   color: #f0c040;
   margin: .2rem;
 }
+.rating span:last-child{
+  color: black;
+}
 .card-body{
   padding:  1rem;
 }

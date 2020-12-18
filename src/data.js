@@ -18,7 +18,7 @@ const data = {
             image: 'images/s1.jpg',
             price: 120,
             brand: 'Marvel',
-            rating: 4.5,
+            rating: 5,
             numReviews: 7,
             description: "high quality shirts"
         },
@@ -29,7 +29,7 @@ const data = {
             image: 'images/s3.jpg',
             price: 130,
             brand: 'Panda',
-            rating: 4.5,
+            rating: 3.5,
             numReviews: 8,
             description: "high quality shirts"
         },
@@ -40,7 +40,7 @@ const data = {
             image: 'images/s4.jpg',
             price: 110,
             brand: 'Ninja',
-            rating: 5,
+            rating: 3.5,
             numReviews: 12,
             description: "high quality shirts"
         },
