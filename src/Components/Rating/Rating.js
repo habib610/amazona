@@ -45,7 +45,7 @@ const Rating = (props) => {
                    ? 'fas fa-star-half-alt' : 'far fa-star'}>
             </i>
             </span>
-       <span> {props.reviews} Reviews </span>
+       <span> {reviews} Reviews </span>
            </div>
     );
 };

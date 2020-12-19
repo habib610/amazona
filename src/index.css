@@ -46,6 +46,11 @@ footer{
   align-items: center;
 }
 /* common  */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 h1 {
   font-size: 1.8rem;
   padding:  1rem 0;
@@ -102,4 +107,46 @@ img.medium{
 }
 .price {
   font-size: 2rem;
+}
+/* /////////////=======>>>>>>>> */
+.row.top{
+  align-items: flex-start;
+}
+/* /////////////=======>>>>>>>> */
+.row.top{
+  align-items: flex-start;
+}
+.col-1{
+  flex: 1 1 25rem;
+}
+.col-2{
+  flex: 2 1 50rem;
+}
+
+.success{
+  color: #20a020;
+}
+.error{
+  color: red;
+}
+
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family:Helvetica,  Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button.primary{
+  background-color: #f0c040;
+}
+button.block{
+  width: 100%;
+}
+img.large{
+  width: 100%;
 }

@@ -1,26 +1,30 @@
-import Products from './Components/Products/Products';
-import data from './data'
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import Details from "./Components/Details/Details";
+import Home from "./Components/Home/Home";
+
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="grid-container">
    <header  className="row">
      <div>
-<a href="#" className="brand">Amazona</a>
+<Link to="/" className="brand">Amazona</Link>
      </div>
-     <div><a href="#">Cart</a>
-     <a href="#">SignIn</a>
+     <div><Link to="/">Cart</Link>
+     <Link to="/">SignIn</Link>
      </div>
    </header>
-   <main className="row center">
-    {
-      data.products.map(product => <Products key={product.id} product={product} ></Products> )
-    }
+   <main>
+   <Route   exact path="/" component={Home} ></Route>
+   <Route path="/product/:id"  component={Details} ></Route>
    </main>
    <footer class="row center">
             All Right Reserved
         </footer>
     </div>
+    </BrowserRouter>
   );
 }
 
