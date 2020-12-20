@@ -4,7 +4,6 @@ import data from '../../data';
 import Rating from '../Rating/Rating';
 
 const Details = (props) => {
-    const {id} = useParams()
 
     const product = data.products.find(pd=> pd._id === props.match.params.id)
 console.log(product)
