@@ -20,7 +20,7 @@ function App() {
    <Route   exact path="/" component={Home} ></Route>
    <Route path="/product/:id"  component={Details} ></Route>
    </main>
-   <footer class="row center">
+   <footer className="row center">
             All Right Reserved
         </footer>
     </div>

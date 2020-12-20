@@ -71,7 +71,19 @@ const data = {
             rating: 4,
             numReviews: 17,
             description: "high quality shirts"
-        }
+        },
+        {
+            _id: "7",
+            name: 'Being Human Shirts',
+            category: 'Shirts',
+            image: 'images/s7.jpg',
+            price: 100,
+            countInStock: 6,
+            brand: 'Attire',
+            rating: 4.5,
+            numReviews: 17,
+            description: "high quality shirts"
+        },
     ]
 }
 
