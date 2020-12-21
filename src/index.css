@@ -129,7 +129,7 @@ img.medium{
 .error{
   color: red;
 }
-
+input, select, textarea,
 button{
   padding: 1rem;
   border-radius: 0.5rem;
@@ -138,8 +138,16 @@ button{
   font-family:Helvetica,  Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+input:hover, 
+select:hover, 
+textarea:hover,
+button{
   background-color: #f8f8f8;
   cursor: pointer;
+}
+button:hover{
+  border: .1rem solid #404040;
 }
 button.primary{
   background-color: #f0c040;
