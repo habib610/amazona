@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import data from '../../data';
 import Rating from '../Rating/Rating';
 
 const Details = (props) => {
 
-    const product = data.products.find(pd=> pd._id === props.match.params.id)
-console.log(product)
+    const product = data.products.find(pd=> pd._id === props.match.params.id);
     return (
         <div className="row top">
         <Link to="/">Back to Home</Link>
