@@ -1,4 +1,3 @@
-
 html {
   font-size: 62.5%; /* 16px * 62.5 = 10px */
   box-sizing: border-box;
@@ -7,7 +6,7 @@ body{
   margin: 0;
   height: 100vh;
   font-size: 1.6rem;
-  font-family:Helvetica,  Arial, sans-serif;
+  font-family:Helvetica,  Arial, sans-serif, 'Fredoka One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,6 +98,11 @@ img.medium{
 .rating span:last-child{
   color: black;
 }
+.card {
+  border: 1px solid lightgray;
+  border-radius: .5rem;
+  margin: 1rem;
+}
 .card-body{
   padding:  1rem;
 }
@@ -159,6 +163,7 @@ img.large{
   width: 100%;
 }
 
+
 .alert {
   padding: 1rem;
   border: 0.1px solid transparent;
@@ -179,4 +184,13 @@ img.large{
   padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
   margin-left: 0.2rem;
+}
+
+.small {
+  max-width: 5rem;
+  width: 100%;
+}
+
+.min-30 {
+  max-width: 30rem;
 }

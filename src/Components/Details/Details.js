@@ -81,7 +81,7 @@ const Details = (props) => {
                               ...Array(product.countInStock)
                                 .keys()]
                                 .map((prd) => (
-                                  <option key={prd + 1} value={prd + 1}>{prd + 1}</option>
+                                  <option key={prd + 1} value={prd + 1} >{prd + 1}</option>
                                 ))
                             }
                           </select>
