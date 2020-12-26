@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "../Actions/cartActions";
+import { addToCart, removeCartItems } from "../Actions/cartActions";
 import MessageBox from "../Home/MessageBox";
 
 const CartScreen = (props) => {
@@ -22,13 +22,14 @@ const CartScreen = (props) => {
 
   const removeFromCart = (id) => {
     // delete
+    dispatch(removeCartItems(id))
   };
 
   const checkOutHandler = () => {
     props.history.push("/signin?redirect=shipping");
   };
 
-  console.log(cartItems[0].image)
+
   return (
     <div className="row top">
       <div className="col-2">
@@ -69,7 +70,7 @@ const CartScreen = (props) => {
                   </div>
                   <div>${item.price}</div>
                   <div>
-                    <button onClick={removeFromCart(item.product)}>
+                    <button onClick={()=> removeFromCart(item.product)}>
                       Delete
                     </button>
                   </div>
