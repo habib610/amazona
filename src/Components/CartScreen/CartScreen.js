@@ -45,7 +45,7 @@ const CartScreen = (props) => {
               <li key={item.product}>
                 <div className="row">
                   <div>
-                    <img className="small" src={`/${item.image}`} alt={item.name} />
+                    <img className="small" src={`${item.image}`} alt={item.name} />
                   </div>
 
                   <div className="min-30">
@@ -57,7 +57,6 @@ const CartScreen = (props) => {
                       onChange={(e) =>
                         dispatch(
                           addToCart(item.product, Number(e.target.value))
-                          
                         )
                       }
                     >
