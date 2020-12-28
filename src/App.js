@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Route } from "react-router-dom";
 import CartScreen from "./Components/CartScreen/CartScreen";
 import Details from "./Components/Details/Details";
 import Home from "./Components/Home/Home";
+import SignIn from "./Components/SignIn/SignIn";
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route exact path="/" component={Home} ></Route>
           <Route path="/product/:id" component={Details} ></Route>
+          <Route path="/signin" component={SignIn}></Route>
         </main>
         <footer className="row center">
           All Right Reserved

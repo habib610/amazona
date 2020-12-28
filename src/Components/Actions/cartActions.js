@@ -1,5 +1,4 @@
 import Axios from 'axios';
-import { bindActionCreators } from 'redux';
 import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../ProductConstants/ProductConstants';
 // import { CART_ADD_ITEM } from '../constants/cartConstants';
 
