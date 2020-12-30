@@ -208,3 +208,23 @@ img.large{
   margin: 1rem 0;
   display: block;
 }
+
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content{
+  position: absolute;
+  right: 0;
+  min-width: 12rem;
+  margin: 0;
+  margin-top: 0.4rem;
+  padding: 1rem;
+  background-color: #203040 ;
+  border-radius: .5rem;
+  z-index: 1;
+  display: none;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
